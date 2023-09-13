@@ -11,6 +11,11 @@ public class App
 
         int antal_bokstäver = text.length();
 
+        int plats = text.indexOf("i");
+
         System.out.println("\""+text+"\" har " +antal_bokstäver+ " bokstäver");
+
+        System.out.println(+plats+1);
+
     }
 }
