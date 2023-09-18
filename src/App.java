@@ -11,11 +11,14 @@ public class App
 
         int antal_bokstäver = text.length();
 
-        int plats = text.indexOf("i");
+        System.out.println("Skriv en bosktav: ");
+        String bokstav = tb.nextLine();
+        
+        int plats = text.indexOf(bokstav);
 
         System.out.println("\""+text+"\" har " +antal_bokstäver+ " bokstäver");
 
-        System.out.println(+plats+1);
+        System.out.println("bokstaven" +bokstav+ " är på platsen" + (plats+1));
 
     }
 }
