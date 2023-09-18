@@ -26,8 +26,16 @@ public class App
         System.out.println("Skriv ett till nummer");
         int steg_fram = tb.nextInt();
 
+        tb.nextLine();
+
         String del_sträng = text.substring(start, steg_fram);
         System.out.println(del_sträng);
+
+        System.out.println("Skriv en text ");
+        String textB = tb.nextLine();
+        
+        boolean b = text.contains(textB);
+        System.out.println(b);
 
     }
 }
