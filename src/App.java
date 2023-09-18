@@ -18,7 +18,16 @@ public class App
 
         System.out.println("\""+text+"\" har " +antal_bokstäver+ " bokstäver");
 
-        System.out.println("bokstaven" +bokstav+ " är på platsen" + (plats+1));
+        System.out.println("bokstaven " +bokstav+ " är på platsen " + (plats+1));
+
+
+        System.out.println("skriv ett nummer");
+        int start = tb.nextInt();
+        System.out.println("Skriv ett till nummer");
+        int steg_fram = tb.nextInt();
+
+        String del_sträng = text.substring(start, steg_fram);
+        System.out.println(del_sträng);
 
     }
 }
