@@ -37,5 +37,14 @@ public class App
         boolean b = text.contains(textB);
         System.out.println(b);
 
+        System.out.println("Vilken text vill du byta ut");
+        String bytaText = tb.nextLine();
+        System.out.println("Vad ska du byta texten till");
+        String bytaTextTill = tb.nextLine();
+
+        String nytext = text.replace(bytaText, bytaTextTill);
+        System.out.println(nytext);
+
+
     }
 }
